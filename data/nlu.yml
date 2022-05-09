@@ -36,6 +36,10 @@ nlu:
     - Explore more about salary account 
     - know more about salary accout 
     - Explore
+
+- intent: other
+    - other feature  
+    - Explore
 - intent: goodbye
   examples: |
     - good afternoon
@@ -109,3 +113,11 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+
+- intent: out_of_scope
+  examples: |
+    - I want to order food 
+    - what is 2 + 2 ?
+    - who is the president of india ?
+    

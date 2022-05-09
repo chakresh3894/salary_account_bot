@@ -5,12 +5,16 @@ intents:
   - apply
   - Explore
   - goodbye
+  - open
+  - benefits
+  - conversion
+  - other
   - affirm
   - deny
   - mood_great
   - mood_unhappy
   - bot_challenge
-
+  - out_of_scope
 responses:
   utter_greet:
   - text: 'Hey there '
@@ -29,13 +33,13 @@ responses:
   - text: "Please choose the options to explore more ."
     buttons:
     - title: "  Who can open a Salary Account?"
-      payload: '/Explore'
+      payload: '/open'
     - title: "  Benefits of a Salary Account"
-      payload: '/Explore'
+      payload: '/benefits'
     - title: "  Conversion of accounts"
-      payload: '/Explore'
+      payload: '/conversion'
     - title: "  Other feather"
-      payload: '/Explore'
+      payload: '/other'
  
  
   utter_open_salary:
@@ -46,8 +50,7 @@ responses:
  
   utter_conversion:
   - text: "Can it be converted to Salary account? Yes. Existing saving account with SBI can also be converted to CSP account. Please contact your branch in this regard."
-  utter_other: 
-  - text: ""
+ 
   utter_happy:
   - text: "Great, carry on!"
 
@@ -56,7 +59,10 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, created by chakresh powered by rasa :)  "
-
+  
+  utter_default:
+  - text: "Sorry  I didn't understant what you said :( "
+ 
  
 session_config:
   session_expiration_time: 60

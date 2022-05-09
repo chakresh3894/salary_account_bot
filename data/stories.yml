@@ -20,11 +20,12 @@ stories:
   - intent: Explore
   - action: utter_Explore
  
-# - story: options path
-#   steps:
-#   - intent: open 
-#   - action: utter_open_salary
-#   - indent: benefits
-#   - action: utter_benefits
-#   - intent: conversion
-#   - action: utter_conversion
+
+- story: options path
+  steps:
+  - intent: open 
+  - action: utter_open_salary
+  - intent: benefits
+  - action: utter_benefits
+  - intent: conversion
+  - action: utter_conversion
